@@ -15,8 +15,10 @@ Coming soon to [NuGet](https://www.nuget.org/).
 
 ```bash
 dotnet add package CleanCsvParser
-
-# Quick Start
+Quick Start
+csharp
+Copy
+Edit
 public class Person
 {
     public string Name { get; set; }
@@ -31,22 +33,35 @@ foreach (var person in people)
 {
     Console.WriteLine($"{person.Name} is {person.Age} years old.");
 }
-
-# Configuration
+Configuration
 Customize behavior using CsvOptions:
 
+csharp
+Copy
+Edit
 var options = new CsvOptions
 {
     Delimiter = ';',
     HasHeader = true,
     SkipEmptyLines = true
 };
-
 Goals
-🔬 High performance (no LINQ overhead)
+🔬 High performance (minimal allocations, no LINQ overhead)
 
 🧪 Easy to test and benchmark
 
 🔒 Safe parsing without exceptions in common scenarios
 
 📦 Small and dependency-free
+
+Roadmap
+ Async parsing from streams
+
+ Benchmark comparison with CsvHelper
+
+ NuGet release
+
+ Advanced value binding and type safety
+
+License
+MIT License
