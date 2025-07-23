@@ -13,12 +13,7 @@
 
 Coming soon to [NuGet](https://www.nuget.org/).
 
-```bash
-dotnet add package CleanCsvParser
-Quick Start
-csharp
-Copy
-Edit
+# Quick Start
 public class Person
 {
     public string Name { get; set; }
@@ -33,12 +28,10 @@ foreach (var person in people)
 {
     Console.WriteLine($"{person.Name} is {person.Age} years old.");
 }
-Configuration
+
+# Configuration
 Customize behavior using CsvOptions:
 
-csharp
-Copy
-Edit
 var options = new CsvOptions
 {
     Delimiter = ';',
@@ -65,3 +58,6 @@ Roadmap
 
 License
 MIT License
+
+```bash
+dotnet add package CleanCsvParser
