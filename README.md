@@ -14,6 +14,8 @@
 Coming soon to [NuGet](https://www.nuget.org/).
 
 # Quick Start
+
+```bash
 public class Person
 {
     public string Name { get; set; }
@@ -28,16 +30,19 @@ foreach (var person in people)
 {
     Console.WriteLine($"{person.Name} is {person.Age} years old.");
 }
+```
 
 # Configuration
 Customize behavior using CsvOptions:
 
+```bash
 var options = new CsvOptions
 {
     Delimiter = ';',
     HasHeader = true,
     SkipEmptyLines = true
 };
+```
 Goals
 🔬 High performance (minimal allocations, no LINQ overhead)
 
