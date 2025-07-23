@@ -1,0 +1,58 @@
+﻿## Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+## VS Code (if used)
+.vscode/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Resharper / Rider
+*.DotSettings.user
+.idea/
+*.sln.iml
+
+## Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.testresult
+*.trx
+
+## Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+## Others
+*.dbmdl
+*.publish.xml
+
+## Mac / Linux
+.DS_Store
+*.swp
+*.swo
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+/BenchmarkDotNet.Artifacts/results
